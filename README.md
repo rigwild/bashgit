@@ -25,7 +25,7 @@ growing too much.
 Download:
 
 ```sh
-curl -o ~/.bashgit https://raw.githubusercontent.com/oyvindstegard/bashgit/master/.bashgit
+curl -o ~/.bashgit https://raw.githubusercontent.com/rigwild/bashgit/master/.bashgit
 ```
 
 Append the following to `~/.bashrc`:
