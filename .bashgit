@@ -148,13 +148,13 @@ _bashgit_update_PS1() {
     _BASHGIT_CUR_BRANCH=$branch
 
     # Update current PS1
-    local bashgit="${state}[\${_BASHGIT_CUR_BRANCH}${remote}]${color_none}"
+    local bashgit="${state}[\${_BASHGIT_CUR_BRANCH}${remote}]${color_none} "
     case $_BASHGIT_PS1_ORIG in
-        *'\$ ') PS1="${_BASHGIT_PS1_ORIG%\\\$ } ${bashgit}\\\$ " ;;
-        *'$ ') PS1="${_BASHGIT_PS1_ORIG%\$ } ${bashgit}\$ " ;;
-        *'# ') PS1="${_BASHGIT_PS1_ORIG%# } ${bashgit}# " ;;
-        *'% ') PS1="${_BASHGIT_PS1_ORIG%[%] } ${bashgit}% " ;;
-        *'> ') PS1="${_BASHGIT_PS1_ORIG%> } ${bashgit}> " ;;
+        *'\$ ') PS1="${_BASHGIT_PS1_ORIG%\\\$ }${bashgit}\\\$ " ;;
+        *'$ ') PS1="${_BASHGIT_PS1_ORIG%\$ }${bashgit}\$ " ;;
+        *'# ') PS1="${_BASHGIT_PS1_ORIG%# }${bashgit}# " ;;
+        *'% ') PS1="${_BASHGIT_PS1_ORIG%[%] }${bashgit}% " ;;
+        *'> ') PS1="${_BASHGIT_PS1_ORIG%> }${bashgit}> " ;;
         *'⚡️ ') PS1="${_BASHGIT_PS1_ORIG%⚡️ }${bashgit} ⚡️ " ;;
         *) bashgit="${bashgit} "
            PS1="${_BASHGIT_PS1_ORIG} ${bashgit}"
